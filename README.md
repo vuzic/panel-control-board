@@ -1,4 +1,19 @@
-# LED Interface for Raspberry Pi Zero
+# Panel Control Hardware
+
+## Power
+
+### Requirements 
+* Power button which either boots or sends a signal to the RPI to shutdown.
+* Battery status indication (can be crude, maybe just color or flashing to indicate low battery vs charging vs charged)
+* Should not draw too much current when off but fully charged
+
+### Ideas
+* Use MOSFET rated for 15W (5V/3A) to power on the RPI
+* RPI GPIO to act as a power status pin. Shutdown sequence waits for a level change on this pin before cutting the power.
+    * High means PI is shutting down; when it goes low, its finished powering off.
+# LED Interface
+
+(old README, needs update)
 
 This is a hat designed for a Raspberry Pi Zero. It consists of two headers for I2S microphones (the sort of which are availble for under 2$ on aliexpress) and two level shifted outputs.
 

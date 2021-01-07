@@ -1,4 +1,4 @@
-18718745990201337
+18787542817217294
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81703,6 +81703,13 @@ varistor SIOV
 0
 2
 2
+libraries
+SOIC127P600X175-8N
+
+
+0
+8
+8
 project_footprints
 NPTH_3mm_ID
 
@@ -81801,3 +81808,10 @@ TE_103906-3
 0
 4
 4
+user_footprints
+ttgo-esp32-t-display
+
+
+0
+24
+19
