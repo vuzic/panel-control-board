@@ -458,8 +458,6 @@ F 3 "~" H 1950 7050 50  0001 C CNN
 $EndComp
 Text Label 1100 7150 0    60   ~ 0
 P5V
-Text Label 1100 7050 0    60   ~ 0
-P3V3_HAT
 Wire Wire Line
 	1100 7050 1750 7050
 Wire Wire Line
@@ -1343,8 +1341,6 @@ Wire Wire Line
 	5350 6700 4950 6700
 Wire Wire Line
 	4950 6600 5350 6600
-Text Label 1100 6950 0    60   ~ 0
-P3V3_HAT
 Text Label 1100 7250 0    60   ~ 0
 P5V
 $Comp
@@ -1369,8 +1365,6 @@ Wire Wire Line
 Connection ~ 2250 7250
 Wire Wire Line
 	2250 7250 2250 7350
-Wire Wire Line
-	1100 6950 1750 6950
 Wire Wire Line
 	1100 7250 1750 7250
 Text Label 800  1650 0    50   ~ 0
@@ -1790,7 +1784,7 @@ GND
 Wire Wire Line
 	1350 9750 1500 9750
 Text Label 1500 9850 0    50   ~ 0
-RST
+NRST
 Wire Wire Line
 	1350 9850 1500 9850
 Wire Wire Line
@@ -2059,4 +2053,17 @@ Text Notes 12950 7900 0    50   ~ 0
 Right
 Text Label 4000 6600 0    50   ~ 0
 R1B_B
+Text Label 1100 7050 0    60   ~ 0
+P5V
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5FFA1320
+P 1750 6950
+F 0 "#PWR0101" H 1750 6800 50  0001 C CNN
+F 1 "+3V3" H 1765 7123 50  0000 C CNN
+F 2 "" H 1750 6950 50  0001 C CNN
+F 3 "" H 1750 6950 50  0001 C CNN
+	1    1750 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
