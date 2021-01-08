@@ -68,7 +68,7 @@ F 3 "" H 1900 1450 50  0000 C CNN
 	1    2600 1450
 	1    0    0    -1  
 $EndComp
-Text Label 6250 2100 0    60   ~ 0
+Text Label 7800 2150 0    60   ~ 0
 P5V_HAT
 Wire Wire Line
 	6900 2100 6750 2100
@@ -176,8 +176,6 @@ Connection ~ 7550 3050
 Wire Wire Line
 	7050 3050 7050 2700
 Connection ~ 7250 3050
-Wire Wire Line
-	7550 2500 7550 2150
 Wire Wire Line
 	6750 2500 6750 2100
 Text Notes 900  4750 0    118  ~ 24
@@ -1538,11 +1536,6 @@ Connection ~ 6750 2100
 Connection ~ 8650 1550
 Wire Wire Line
 	8650 1550 9050 1550
-Wire Wire Line
-	8300 2150 7550 2150
-Connection ~ 7550 2150
-Wire Wire Line
-	7550 2150 7550 2100
 Text Notes 5950 1700 0    50   ~ 0
 I think this is intended to block excessive current\nfrom flowing from the Pi to the Hat, but actually idk..
 Wire Wire Line
@@ -1786,7 +1779,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 9150 4250 9150
 Wire Wire Line
-	4550 9700 4000 9700
+	4550 9700 4250 9700
 $Comp
 L power:GND #PWR06
 U 1 1 603EA0AA
@@ -1798,8 +1791,6 @@ F 3 "" H 4250 9900 50  0000 C CNN
 	1    4250 9900
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 9900 4250 9150
 Connection ~ 4250 9150
 Wire Wire Line
 	4250 9150 4000 9150
@@ -2009,7 +2000,7 @@ Wire Wire Line
 	1650 7850 1650 7800
 Wire Wire Line
 	1650 8350 1650 8400
-Text Label 7650 2150 0    50   ~ 0
+Text Label 7400 2100 0    50   ~ 0
 EXT_5V
 NoConn ~ 12400 2800
 NoConn ~ 12400 2700
@@ -2120,4 +2111,15 @@ Wire Wire Line
 	15000 4100 15100 4100
 Text Notes 2900 8700 0    50   ~ 0
 Check datasheet for amber leds \nto minimize birghtness / current
+Wire Wire Line
+	7550 2100 7550 2500
+Wire Wire Line
+	7800 2150 8300 2150
+Wire Wire Line
+	4250 9150 4250 9700
+Connection ~ 4250 9700
+Wire Wire Line
+	4250 9700 4000 9700
+Wire Wire Line
+	4250 9700 4250 9900
 $EndSCHEMATC
