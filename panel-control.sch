@@ -613,7 +613,7 @@ U 1 1 5FBED282
 P 4650 5750
 F 0 "J5" H 4700 6267 50  0000 C CNN
 F 1 "HUB-75_A" H 4700 6176 50  0000 C CNN
-F 2 "user_footprints:TE_5-103167-5" H 4650 5750 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 4650 5750 50  0001 C CNN
 F 3 "~" H 4650 5750 50  0001 C CNN
 	1    4650 5750
 	1    0    0    -1  
@@ -1375,7 +1375,7 @@ U 1 1 6002FB0A
 P 4650 6900
 F 0 "J6" H 4700 7417 50  0000 C CNN
 F 1 "HUB-75_B" H 4700 7326 50  0000 C CNN
-F 2 "user_footprints:TE_5-103167-5" H 4650 6900 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 4650 6900 50  0001 C CNN
 F 3 "~" H 4650 6900 50  0001 C CNN
 	1    4650 6900
 	1    0    0    -1  
@@ -2070,7 +2070,7 @@ U 1 1 5FFDDB96
 P 15300 4300
 F 0 "J8" H 15272 4182 50  0000 R CNN
 F 1 "FAN" H 15272 4273 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 15300 4300 50  0001 C CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 15300 4300 50  0001 C CNN
 F 3 "~" H 15300 4300 50  0001 C CNN
 	1    15300 4300
 	-1   0    0    1   
@@ -2118,4 +2118,6 @@ Wire Wire Line
 	15000 3850 15000 4100
 Wire Wire Line
 	15000 4100 15100 4100
+Text Notes 2900 8700 0    50   ~ 0
+Check datasheet for amber leds \nto minimize birghtness / current
 $EndSCHEMATC
