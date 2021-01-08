@@ -6,6 +6,9 @@
 * Power button which either boots or sends a signal to the RPI to shutdown.
 * Battery status indication (can be crude, maybe just color or flashing to indicate low battery vs charging vs charged)
 * Should not draw too much current when off but fully charged
+* OE needs to be disabled on panels when PI is off
+* MCU with analog voltage from battery
+* MCU needs to tell RPI to shut down when battery is <10%
 
 ### Ideas
 * Use MOSFET rated for 15W (5V/3A) to power on the RPI
